@@ -129,8 +129,9 @@ function random_quadratic()
     a = rand()
     b = rand()*rand([-1,1])
     c = rand()*rand([-1,1])
-    return x -> a*x^2 + b*x + c
-    #return x -> x^2
+    # println("newer .01 rereversed negs")
+    # return x -> .01 *x^2 
+    return x -> 10 * x^2
 end
 
 function random_flow(n::Int, n_nonzeros::Int)
